@@ -106,6 +106,17 @@ input:invalid {
     margin-top: 0;
 }
 
+.claim-trial-b {
+    background-color: var(--green);
+    border: 1px solid var(--green);
+    box-shadow: 0px 5px hsl(154, 55%, 46%);
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 0;
+}
+
 /*form styling end*/
 
 /*footer styling below*/
