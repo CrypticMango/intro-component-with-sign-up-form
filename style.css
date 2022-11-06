@@ -33,7 +33,15 @@ h1, p {
 form {
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
+}
+
+input {
+    height: 55px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--grayish-blue);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
 }
 
 span {
@@ -45,6 +53,10 @@ footer {
     text-align: center;
 }
 
+input {
+    padding-left: 20px;
+}
+
 input:invalid {
     background: url(/images/icon-error.svg) no-repeat 85%;
     background-color: white;
@@ -52,45 +64,62 @@ input:invalid {
 
 .top-blurb {
     padding: 0px 30px 0px 30px;
-    margin-bottom: 50px;
+    margin-bottom: 65px;
 }
+
+/*middle card styling*/
 
 .try-free-card {
     background-color: var(--blue);
     color: white;
     border: 1px solid var(--blue);
     border-radius: 10px;
-    padding: 15px 52px;
+    padding: 20px 52px;
     font-size: 16px;
     width: 230px;
     line-height: 1.5rem;
     margin: 0 auto;
-    box-shadow: 0px 6px rgba(0, 0, 0, 0.199);
+    box-shadow: 0px 7px rgba(0, 0, 0, 0.199);
 }
 
 .card-bold {
     color: white;
 }
 
+/*middle card styling end*/
+
+/*form styling below*/
+
 .sign-up-form {
     background-color: white;
-    height: 300px;
+    height: 380px;
+    margin: 30px 20px 20px 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 7px rgba(0, 0, 0, 0.199);
 }
 
 .form-terms {
     color: var(--grayish-blue);
+    font-size: 11px;
+    padding: 0px 30px 0px 30px;
+    margin-top: 0;
 }
+
+/*form styling end*/
+
+/*footer styling below*/
 
 .attribution {
 	font-size: 11px;
 	text-align: center;
 }
 .attribution a {
-	color: white;
+	color: rgb(84, 44, 129);
 }
 
 .fa-brands{
     font-size: 30px;
     color: white;
-    margin-top: 15px;
+    margin: 15px 0px 10px 0px;
 }
