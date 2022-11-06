@@ -17,11 +17,21 @@ body {
     min-height: 100vh;
     background-image: url(/images/bg-intro-mobile.png);
     background-color: var(--red);
+    text-align: center;
+}
+
+h1, p {
+    color: white;
 }
 
 form {
     display: flex;
     flex-direction: column;
+}
+
+span {
+    color: var(--red);
+    font-weight: 700;
 }
 
 footer {
@@ -32,10 +42,19 @@ input:invalid {
     background: url(/images/icon-error.svg) no-repeat 85%;
     background-color: white;
 }
+
+.sign-up-form {
+    background-color: white;
+    height: 300px;
+}
+
+.form-terms {
+    color: var(--grayish-blue);
+}
+
 .attribution {
 	font-size: 11px;
 	text-align: center;
-    color: var(--blue);
 }
 .attribution a {
 	color: white;
