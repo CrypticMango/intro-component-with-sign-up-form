@@ -92,7 +92,7 @@ input:invalid {
 
 .sign-up-form {
     background-color: white;
-    height: 400px;
+    max-height: 400px;
     margin: 30px 20px 20px 20px;
     padding: 20px;
     border-radius: 10px;
@@ -115,6 +115,11 @@ input:invalid {
     font-weight: 500;
     font-size: 17px;
     padding: 0;
+    cursor: pointer;
+}
+
+.claim-trial-b:hover {
+    background-color: hsl(154, 75%, 65%);
 }
 
 /*form styling end*/
@@ -156,6 +161,7 @@ input:invalid {
 
     .sign-up-form {
         width: 470px;
+        max-height: fit-content;
         padding: 35px;
         margin-top: 20px;
     }

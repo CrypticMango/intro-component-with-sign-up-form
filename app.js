@@ -11,11 +11,23 @@ let emailError = document.getElementById("email-error-msg");
 let passwordError = document.getElementById("password-error-msg");
 
 submit.addEventListener("click", function () {
-	const email = email.value;
-	if (validateEmail(email)) {
+	const emailField = email.value;
+	if (validateEmail(emailField)) {
 		emailError.innerHTML = "";
 	} else {
 		emailError.innerHTML = "Looks like this is not an email.";
+	}
+
+	if (firstName.value == 0) {
+		firstError.innerHTML = "First name cannot be empty."
+	}
+
+	if (lastName.value == 0) {
+		lastError.innerHTML = "Last name cannot be empty."
+	}
+
+	if (password.innerHTML == 0) {
+		passwordError.innerHTML = "Password name cannot be empty."
 	}
 });
 
