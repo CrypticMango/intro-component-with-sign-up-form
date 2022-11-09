@@ -20,6 +20,8 @@ submit.addEventListener("click", function () {
 
 	if (firstName.value == 0) {
 		firstError.innerHTML = "First name cannot be empty."
+		firstName.className = "invalid"; // set class to "invalid"
+            invalid = true
 	}
 
 	if (lastName.value == 0) {

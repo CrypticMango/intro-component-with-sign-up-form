@@ -58,7 +58,7 @@ input {
 }
 
 input:invalid {
-    background: url(/images/icon-error.svg) no-repeat 85%;
+    background: url(/images/icon-error.svg) no-repeat 95%;
     background-color: white;
 }
 
@@ -92,7 +92,7 @@ input:invalid {
 
 .sign-up-form {
     background-color: white;
-    max-height: 400px;
+    max-height: max-content;
     margin: 30px 20px 20px 20px;
     padding: 20px;
     border-radius: 10px;
@@ -120,6 +120,15 @@ input:invalid {
 
 .claim-trial-b:hover {
     background-color: hsl(154, 75%, 65%);
+}
+
+#firstn-error-msg, #lastn-error-msg, #email-error-msg, #password-error-msg {
+    color: var(--red);
+    font-style: italic;
+    text-align: right;
+    font-size: 12px;
+    position: relative;
+    top: -15px;
 }
 
 /*form styling end*/
