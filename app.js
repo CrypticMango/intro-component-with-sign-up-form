@@ -16,20 +16,22 @@ submit.addEventListener("click", function () {
 		emailError.innerHTML = "";
 	} else {
 		emailError.innerHTML = "Looks like this is not an email.";
+		emailError.required = true;
 	}
 
 	if (firstName.value == 0) {
 		firstError.innerHTML = "First name cannot be empty."
-		firstName.className = "invalid"; // set class to "invalid"
-            invalid = true
+		firstName.required = true;
 	}
 
 	if (lastName.value == 0) {
 		lastError.innerHTML = "Last name cannot be empty."
+		lastName.required = true;
 	}
 
 	if (password.innerHTML == 0) {
-		passwordError.innerHTML = "Password name cannot be empty."
+		passwordError.innerHTML = "Password cannot be empty."
+		password.required = true;
 	}
 });
 
